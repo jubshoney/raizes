@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>exemplo vetores</title>
+</head>
+<body>
+    <h1> exemplos</h1>
+
+    <script> 
+       
+        let animal = [
+            {
+            nome: 'previlegiada',
+            idade: '2 anos', 
+            tipo: 'gato'
+        },
+        
+         {
+            nome:'Sheik',
+            idade: '12anos',
+            tipo: 'cachorro'
+        },
+       {
+            nome: 'Hulk',
+            idade: '12 anos',
+            tipo: 'cachorro'
+        }
+    ]
+        console.log(animal)
+        
+//50) Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem crescente.
+for(i=1; i<=10; i++) {
+    console.log(i)
+}
+
+//51)Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem decrescente.
+for(i=10; i<=1;i--) {
+    console.log(i)
+}
+
+// 55) Escreva um algoritmo que calcule e imprima a tabuada do 8 (1 a 10).
+for(i=1; i<=10;i++) {
+    console.log(i*8)
+}
+
+//59
+let numeros =  [ 2, -5, -9, 12, 4, 25, 23, -50,8,-25]
+let numeros_negativos = 0
+for(let i = 0; i < 10; i++){
+    if(numeros[i] < 0 ){
+        numeros_negativos++
+    }
+}
+console.log('quantidade de numeros negativos: '+ numeros_negativos)
+
+//60 Ler 10 valores e escrever quantos desses valores lidos estão no intervalo [10,20] (inlcuindo os
+//valores 10 e 20 no intervalo) e quantos deles estão fora deste intervalo.
+   let valores = [ 2, 5, 9, 12, 4, 25, 23, 50,8,25]
+   let numeros_dentro = 0 
+   let numeros_fora = 0
+   for(let i=0; i <10; i++){
+if(valores[i] >=10 && valores[i]<=20){
+    numeros_dentro++
+    } else {
+    numeros_fora++
+    }
+   }
+   console.log ('quantidade de valores fora do intervalo é   '+numeros_fora)
+   console.log ('Quantidade de valores dentro do intervalo é  '+ numeros_dentro)
+   </script>
+</body>
+</html>
